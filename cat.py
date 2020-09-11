@@ -19,12 +19,11 @@ print('You entered: ', name)
 #Exercise 3
 
 cat_speak = input('What does a cat say? ')
-print(cat_speak)
-top_line = '_'*20
+speech_length = len(cat_speak)
 
-print('{0:>30}'.format(top_line))
-print('{0:>9}  {1:>1}{2}{3:>18}' .format('< ', cat_speak,'!', '>'))
-print('{0:>30}'.format(top_line))
+print('   {}'.format('_' * speech_length))
+print(' < {}! > ' .format(cat_speak))
+print('   {}'.format('-' * speech_length))
 
 print('{0:>9}'.format('/'))
 print(' /\_/\ ''{0:1}'.format('/'))
